@@ -1,5 +1,5 @@
 <?php
-namespace noam148\imagemanager\assets;
+namespace denobraz\imagemanager\assets;
 use yii\web\AssetBundle;
 
 /**
@@ -7,7 +7,7 @@ use yii\web\AssetBundle;
  */
 class ImageManagerInputAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/noam148/yii2-image-manager/assets/source';
+    public $sourcePath = '@vendor/denobraz/yii2-image-manager/assets/source';
     public $css = [
 		'css/imagemanager.input.css',
     ];

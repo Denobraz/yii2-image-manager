@@ -136,7 +136,7 @@ $this->title = Yii::t('imagemanager','Image manager');
                     }
                 }
                 ?>
-                <p><a class="tree-all" href="<?= Url::to(['manager/index', 'view-mode' => $viewMode, 'input-id' => $inputFieldId]); ?>">Zobrazit vše (<?= \noam148\imagemanager\models\ImageManager::find()->count(); ?>)</a></p>
+                <p><a class="tree-all" href="<?= Url::to(['manager/index', 'view-mode' => $viewMode, 'input-id' => $inputFieldId]); ?>">Zobrazit vše (<?= \denobraz\imagemanager\models\ImageManager::find()->count(); ?>)</a></p>
                 <ul class="imagemanager-tree">
                     <?php foreach($folders as $folder): ?>
                         <li>

@@ -1,8 +1,8 @@
 <?php
 
-namespace noam148\imagemanager\models;
+namespace denobraz\imagemanager\models;
 
-use noam148\imagemanager\Module;
+use denobraz\imagemanager\Module;
 use Yii;
 use yii\db\Expression;
 use yii\behaviors\TimestampBehavior;

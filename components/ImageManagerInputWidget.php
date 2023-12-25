@@ -1,14 +1,14 @@
 <?php
 
-namespace noam148\imagemanager\components;
+namespace denobraz\imagemanager\components;
 
 use Yii;
 use yii\widgets\InputWidget;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\helpers\Url;
-use noam148\imagemanager\models\ImageManager;
-use noam148\imagemanager\assets\ImageManagerInputAsset;
+use denobraz\imagemanager\models\ImageManager;
+use denobraz\imagemanager\assets\ImageManagerInputAsset;
 
 class ImageManagerInputWidget extends InputWidget {
 
@@ -42,7 +42,7 @@ class ImageManagerInputWidget extends InputWidget {
             Yii::$app->i18n->translations['imagemanager'] = [
                 'class' => 'yii\i18n\PhpMessageSource',
                 'sourceLanguage' => 'en',
-                'basePath' => '@noam148/imagemanager/messages'
+                'basePath' => '@denobraz/imagemanager/messages'
             ];
         }
     }

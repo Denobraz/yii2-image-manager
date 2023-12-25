@@ -1,6 +1,6 @@
 <?php
 
-namespace noam148\imagemanager\controllers;
+namespace denobraz\imagemanager\controllers;
 
 use yii\web\Controller;
 

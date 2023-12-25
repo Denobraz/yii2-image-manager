@@ -1,12 +1,11 @@
 <?php
 
-namespace noam148\imagemanager;
+namespace denobraz\imagemanager;
 
 use Yii;
 use yii\base\UnknownClassException;
 use yii\base\InvalidConfigException;
 use yii\web\AssetManager;
-use noam148\imagemanager\assets\ImageManagerModuleAsset;
 
 /**
  * imagemanager module definition class
@@ -57,7 +56,7 @@ class Module extends \yii\base\Module {
 			Yii::$app->i18n->translations['imagemanager'] = [
 				'class' => 'yii\i18n\PhpMessageSource',
 				'sourceLanguage' => 'en',
-				'basePath' => '@noam148/imagemanager/messages'
+				'basePath' => '@denobraz/imagemanager/messages'
 			];
 		}
 		//check extensions
@@ -67,7 +66,7 @@ class Module extends \yii\base\Module {
 			throw new InvalidConfigException("Component param 'mediaPath' need to be set to a location");
 		}
 		//set asset path
-		$this->assetPublishedUrl = (new AssetManager)->getPublishedUrl("@vendor/noam148/yii2-image-manager/assets/source");
+		$this->assetPublishedUrl = (new AssetManager)->getPublishedUrl("@vendor/denobraz/yii2-image-manager/assets/source");
 
 		// Check if the canRemoveImage variable is callable
 		if (is_callable($this->canRemoveImage)) {
